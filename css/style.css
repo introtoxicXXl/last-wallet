@@ -24,10 +24,13 @@ section{
 }
 .left-side{
   flex-basis: 48%;
+  margin: 0 auto;
 }
 .left-side img{
-  width: 100%;
+  width: 90%;
   height: 80vh;
+  border-radius: 10px;
+  
 }
 .right-side{
   flex-basis: 48%;
@@ -58,5 +61,8 @@ label{
 @media only screen and (max-width: 480px){
   section{
     flex-direction: column;
+  }
+  .left-side img{
+    width: 100%;
   }
 }

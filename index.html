@@ -35,31 +35,31 @@
           <h5 class="fs-4 fw-bold text-uppercase my-3 text-center">Income</h5>
           <div class="d-flex justify-content-around align-items-center">
             <label>Income:</label>
-            <input type="text">
+            <input id="income-input" type="number" min="0">
           </div>
           <h5 class="fs-4 fw-bold text-uppercase my-3 text-center">Expenses</h5>
           <div class="d-flex justify-content-around align-items-center">
             <label>Food:</label>
-            <input type="text">
+            <input id="food-input" type="number" min="0">
           </div>
           <div class="d-flex justify-content-around align-items-center">
             <label>Rent:</label>
-            <input type="text">
+            <input id="rent-input" type="number" min="0">
           </div>
           <div class="d-flex justify-content-around align-items-center">
             <label>Clothes:</label>
-            <input type="text">
+            <input id="cloth-input" type="number" min="0">
           </div>
-          <button class="my-3 m-auto d-block">Calculate</button>
-          <h5 class="fs-4 fw-bold text-uppercase my-3 ms-3">Total Expenses: <span>0</span> </h5>
-          <h5 class="fs-4 fw-bold text-uppercase my-3 ms-3">Balance: <span>0</span> </h5>
+          <button class="my-3 m-auto d-block" id="calculate">Calculate</button>
+          <h5 class="fs-4 fw-bold text-uppercase my-3 ms-3">Total Expenses: <span id="total-expenses">0</span> </h5>
+          <h5 class="fs-4 fw-bold text-uppercase my-3 ms-3">Balance: <span id="balance">0</span> </h5>
           <div class="d-flex justify-content-around align-items-center">
             <label>Save:</label>
-            <input type="text">
+            <input id="save-input" type="number" min="0">
           </div>
-          <button class="my-3 m-auto d-block">Save</button>
-          <h5 class="fs-4 fw-bold text-uppercase my-3 ms-3">Saving Amount: <span>0</span> </h5>
-          <h5 class="fs-4 fw-bold text-uppercase my-3 ms-3">Remaining Amount: <span>0</span> </h5>
+          <button class="my-3 m-auto d-block" id="save">Save</button>
+          <h5 class="fs-4 fw-bold text-uppercase my-3 ms-3">Saving Amount: <span id="total-save">0</span> </h5>
+          <h5 class="fs-4 fw-bold text-uppercase my-3 ms-3">Remaining Amount: <span id="remain-amount">0</span> </h5>
         </div>
       </div>
     </section>
