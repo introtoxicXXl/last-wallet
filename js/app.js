@@ -1,4 +1,4 @@
-document.getElementById('calculate').addEventListener('click', function () {
+function calculate () {
   const totalIncome = document.getElementById('income-input').value;
   const foodCost = document.getElementById('food-input').value;
   const rentCost = document.getElementById('rent-input').value;
@@ -18,12 +18,12 @@ document.getElementById('calculate').addEventListener('click', function () {
   } else {
     alert()
   }
-})
+}
 
-document.getElementById('save').addEventListener('click', function () {
+function save () {
   const totalSaveValue = document.getElementById('save-input');
-  const totalSave = parseFloat(totalSaveValue.value)
-  if (totalSave < 0 && typeof totalSaveValue.value == 'string') {
+  const totalSave = totalSaveValue.value
+  if (totalSave < 0) {
     alert()
   } else {
     const totalIncomeValue = document.getElementById('income-input');
@@ -34,8 +34,11 @@ document.getElementById('save').addEventListener('click', function () {
     const totalBalance = totalBalanceText.innerText;
     const totalRemainingText = document.getElementById('remain-amount');
     const remainingBalance = totalRemainingText.innerText;
-    savingAmountText.innerText = (totaIncome * totalSave) / 100;
-    totalRemainingText.innerText = parseFloat(totalBalanceText.innerText) - parseFloat(savingAmountText.innerText);
+    savingAmountText.innerText = (totaIncome * parseFloat(totalSave)) / 100;
+    if(savingAmountText.innerText > totalBalanceText.innerText){
+      alert();
+    }else{
+      totalRemainingText.innerText = parseFloat(totalBalanceText.innerText) - parseFloat(savingAmountText.innerText);
+    }
   }
-
-})
+}
