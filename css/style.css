@@ -5,10 +5,58 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-color: #32173a5e;
+}
 .wallet{
-  color: #2D1633;
+  color: #330c3d;
   border: 3px solid #2D1633;
   display: inline-block;
   padding: 10px 50px;
   border-radius: 25px;
+}
+
+
+section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.left-side{
+  flex-basis: 48%;
+}
+.left-side img{
+  width: 100%;
+  height: 80vh;
+}
+.right-side{
+  flex-basis: 48%;
+}
+h5{
+  color: #2D1633;
+}
+input{
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  background-color: #32173a5e;
+  padding: 5px 10px;
+  margin: 10px 5px;
+}
+button{
+  color: #fff;
+  border: 0;
+  outline: 0;
+  background-color: #330c3d;
+  padding: 5px 20px;
+  border-radius: 41px;
+}
+label{
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 480px){
+  section{
+    flex-direction: column;
+  }
 }
