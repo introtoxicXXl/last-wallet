@@ -8,6 +8,11 @@
 body{
   background-color: #32173a5e;
 }
+h5{
+  color: #2D1633;
+}
+/* --------------------------------- heading -------------------------------- */ 
+
 .wallet{
   color: #330c3d;
   border: 3px solid #2D1633;
@@ -16,7 +21,7 @@ body{
   border-radius: 25px;
 }
 
-
+/* ------------------------------ main section ------------------------------ */
 section{
   display: flex;
   justify-content: space-between;
@@ -35,17 +40,16 @@ section{
 .right-side{
   flex-basis: 48%;
 }
-h5{
-  color: #2D1633;
+
+.input{
+  background-color: #26132cb4;
+  color: #fff;
 }
-input{
-  border: 0;
-  outline: 0;
-  border-radius: 8px;
-  background-color: #32173a5e;
-  padding: 5px 10px;
-  margin: 10px 5px;
+.input:focus{
+  background-color: #593b63a2;
+  color: #fff ;
 }
+/* --------------------------------- button --------------------------------- */
 button{
   color: #fff;
   border: 0;
@@ -54,10 +58,9 @@ button{
   padding: 5px 20px;
   border-radius: 41px;
 }
-label{
-  font-size: 20px;
-}
 
+
+/* ------------------------------- media Quary ------------------------------ */
 @media only screen and (max-width: 480px){
   section{
     flex-direction: column;
